@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Release\\Networking.ixx.obj",
+            "outputs": [
+                "C:\\Users\\3hoze\\Desktop\\Loom\\x64\\Release\\Loom Networking.pdb",
+                "x64\\Release\\",
+                "C:\\Users\\3hoze\\Desktop\\Loom\\Loom Networking\\x64\\Release\\Networking.ixx.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "Networking",
+                    "source-path": "c:\\users\\3hoze\\desktop\\loom\\loom networking\\networking.ixx",
+                    "is-interface": true
+                }
+            ],
+            "requires": [
+                {
+                    "logical-name": "typeinfo",
+                    "source-path": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\typeinfo",
+                    "lookup-method": "include-angle",
+                    "unique-on-source-path": true
+                }
+            ]
+        }
+    ]
+}

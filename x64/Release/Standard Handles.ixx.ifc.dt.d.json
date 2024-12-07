@@ -1,0 +1,10 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\3hoze\\desktop\\loom\\loom networking\\standard handles.ixx",
+        "ProvidedModule": "Standard_Handles",
+        "Includes": [],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

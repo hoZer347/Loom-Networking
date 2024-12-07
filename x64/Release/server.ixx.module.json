@@ -1,0 +1,47 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Release\\Server.ixx.obj",
+            "outputs": [
+                "C:\\Users\\3hoze\\Desktop\\Loom\\x64\\Release\\Loom Networking.pdb",
+                "x64\\Release\\",
+                "C:\\Users\\3hoze\\Desktop\\Loom\\Loom Networking\\x64\\Release\\Server.ixx.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "Server",
+                    "source-path": "c:\\users\\3hoze\\desktop\\loom\\loom networking\\server.ixx",
+                    "is-interface": true
+                }
+            ],
+            "requires": [
+                {
+                    "logical-name": "Component"
+                },
+                {
+                    "logical-name": "Networking"
+                },
+                {
+                    "logical-name": "mutex",
+                    "source-path": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\mutex",
+                    "lookup-method": "include-angle",
+                    "unique-on-source-path": true
+                },
+                {
+                    "logical-name": "queue",
+                    "source-path": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\queue",
+                    "lookup-method": "include-angle",
+                    "unique-on-source-path": true
+                },
+                {
+                    "logical-name": "functional",
+                    "source-path": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\functional",
+                    "lookup-method": "include-angle",
+                    "unique-on-source-path": true
+                }
+            ]
+        }
+    ]
+}

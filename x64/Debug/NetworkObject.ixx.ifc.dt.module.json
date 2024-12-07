@@ -1,0 +1,11 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\3hoze\\desktop\\loom\\loom networking\\networkobject.ixx",
+        "ProvidedModule": "NetworkObject",
+        "ImportedModules": [],
+        "ImportedHeaderUnits": [
+            "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\typeinfo"
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\3hoze\\desktop\\loom\\loom networking\\client.ixx",
+        "ProvidedModule": "Client",
+        "ImportedModules": [
+            "Component"
+        ],
+        "ImportedHeaderUnits": []
+    }
+}

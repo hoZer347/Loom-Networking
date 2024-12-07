@@ -1,0 +1,17 @@
+﻿  Scanning sources for module dependencies...
+  Standard Handles.ixx
+  Client.ixx
+  Networking.ixx
+  Server.ixx
+  typeinfo
+  Definitions.hpp
+  Compiling...
+  Definitions.hpp
+  typeinfo
+  Client.ixx
+C:\Users\3hoze\Desktop\Loom\Loom Networking\Client.ixx(3,17): error C2230: could not find module 'Component'
+C:\Users\3hoze\Desktop\Loom\Loom Networking\Client.ixx(9,10): error C7568: argument list missing after assumed function template 'Component'
+C:\Users\3hoze\Desktop\Loom\Loom Networking\Client.ixx(10,2): error C3770: 'unknown-type': is not a valid base class
+C:\Users\3hoze\Desktop\Loom\Loom Networking\Client.ixx(11,8): error C3668: 'Loom::Client::OnAttach': method with override specifier 'override' did not override any base class methods
+C:\Users\3hoze\Desktop\Loom\Loom Networking\Client.ixx(12,8): error C3668: 'Loom::Client::OnUpdate': method with override specifier 'override' did not override any base class methods
+C:\Users\3hoze\Desktop\Loom\Loom Networking\Client.ixx(13,8): error C3668: 'Loom::Client::OnDetach': method with override specifier 'override' did not override any base class methods
