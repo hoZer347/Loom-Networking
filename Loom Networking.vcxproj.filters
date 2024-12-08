@@ -10,6 +10,9 @@
     <Filter Include="Client">
       <UniqueIdentifier>{0ca8a440-1e61-479f-9ac7-1af15dcf0e2d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{7ead340c-a2c7-4913-bc84-cb0fc0c806f2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Standard Handles.ixx">
@@ -18,16 +21,28 @@
     <ClCompile Include="Standard Handles.cpp">
       <Filter>Handles</Filter>
     </ClCompile>
-    <ClCompile Include="Server.ixx">
+    <ClCompile Include="Server.cpp">
       <Filter>Server</Filter>
     </ClCompile>
-    <ClCompile Include="Server.cpp">
+    <ClCompile Include="Client.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.h">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.h">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.ixx">
       <Filter>Server</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Server.h">
-      <Filter>Server</Filter>
+    <ClInclude Include="Client.h">
+      <Filter>Client</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

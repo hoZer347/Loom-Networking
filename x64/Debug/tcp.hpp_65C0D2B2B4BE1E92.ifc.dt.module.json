@@ -1,9 +1,0 @@
-{
-    "Version": "1.1",
-    "Data": {
-        "Source": "c:\\users\\3hoze\\desktop\\loom\\external libraries\\boost\\boost\\asio\\ip\\tcp.hpp",
-        "ProvidedModule": "",
-        "ImportedModules": [],
-        "ImportedHeaderUnits": []
-    }
-}

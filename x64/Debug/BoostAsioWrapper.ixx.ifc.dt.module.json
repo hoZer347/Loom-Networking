@@ -1,9 +1,0 @@
-{
-    "Version": "1.1",
-    "Data": {
-        "Source": "c:\\users\\3hoze\\desktop\\loom\\loom networking\\boostasiowrapper.ixx",
-        "ProvidedModule": "boost_asio",
-        "ImportedModules": [],
-        "ImportedHeaderUnits": []
-    }
-}

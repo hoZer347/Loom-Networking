@@ -1,15 +1,17 @@
 #include "Server.h"
 
-#define BOOST_ASIO_DISABLE_MODULE
+#include <boost/system/error_code.hpp>
 #include <boost/asio.hpp>
 #include <boost/regex.hpp>
-#include <openssl/ssl.h>
 
 #include <filesystem>
 #include <iostream>
 #include <fstream>
 #include <atomic>
 #include <thread>
+
+using boost::asio::ip::tcp;
+using boost::asio::ip::udp;
 
 
 namespace Loom
@@ -51,69 +53,9 @@ namespace Loom
 		return count;
 	};
 
-	void Server::WaitUntilDone()
-	{
-		if (thread.joinable())
-			thread.join();
-	};
-
-	Server::Server(const std::string& project_directory) :
-		project_directory(project_directory),
-		ctx(SSL_CTX_new(SSLv23_server_method()))
-	{
-		//{
-		//	std::scoped_lock lock(ssl_initilization_mutex);
-
-		//	if (!ssl_initialized)
-		//	{
-		//		SSL_library_init();
-		//		OpenSSL_add_all_algorithms();
-		//		SSL_load_error_strings();
-		//		ssl_initialized = true; // Mark SSL as initialized
-		//	};
-		//};
-
-		//if (!ctx) throw std::runtime_error("Failed to create SSL_CTX");
-
-		//SSL_CTX_use_certificate_file(ctx, "C:/Users/3hoze/Desktop/SSL/loomhozer.ca.csr", SSL_FILETYPE_PEM);
-		//SSL_CTX_use_PrivateKey_file(ctx, "C:/Users/3hoze/Desktop/SSL/loomhozer.ca.key", SSL_FILETYPE_PEM);
-		//if (!SSL_CTX_check_private_key(ctx))
-		//	throw std::runtime_error("Private key does not match the public certificate");
-
-		isRunning = true;
-		thread = std::thread
-		{
-			[&]()
-			{
-				while (isRunning)
-					try
-					{
-						Update();
-					}
-					catch (const std::exception& ex)
-					{
-						std::cerr << ex.what() << std::endl;
-					};
-			}
-		};
-	};
-
-	Server::~Server()
-	{
-		io_context.stop();
-
-		isRunning = false;
-		if (thread.joinable())
-			thread.join();
-
-		SSL_CTX_free(ctx);
-	};
-
 	void TCPServer::Update()
 	{
-		using boost::asio::ip::tcp;
-
-		boost::asio::ssl::context ssl_context(boost::asio::ssl::context::sslv23);
+		//boost::asio::ssl::context ssl_context(boost::asio::ssl::context::sslv23);
 		//boost::asio::ssl::stream<tcp::socket> socket(io_context, ssl_context);
 		tcp::socket socket{ io_context };
 
@@ -229,8 +171,6 @@ namespace Loom
 
 	void UDPServer::Update()
 	{
-		using boost::asio::ip::udp;
-
 		std::cout << "Buh?" << std::endl;
 	};
 };
